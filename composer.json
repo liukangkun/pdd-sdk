@@ -1,0 +1,28 @@
+{
+    "name": "liukangkun/pdd-sdk",
+    "description": "多多进宝官方包",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "liukangkun",
+            "email": "352414257@qq.com"
+        }
+    ],
+    "require": {
+        "php": "^5.5|^7.0",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Com\\Pdd\\Pop\\Sdk\\": "src/"
+        }
+    }
+}
