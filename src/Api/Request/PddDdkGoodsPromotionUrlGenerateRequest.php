@@ -84,6 +84,15 @@ class PddDdkGoodsPromotionUrlGenerateRequest extends PopBaseHttpRequest
 	* @JsonProperty(Long, "zs_duo_id")
 	*/
 	private $zsDuoId;
+    /**
+     * @JsonProperty(Boolean, "generate_short_link")
+     */
+    private $generateShortLink;
+
+    /**
+     * @JsonProperty(Boolean, "generate_weixin_code")
+     */
+    private $generateWeixinCode;
 
 	protected function setUserParams(&$params)
 	{
@@ -102,6 +111,8 @@ class PddDdkGoodsPromotionUrlGenerateRequest extends PopBaseHttpRequest
 		$this->setUserParam($params, "p_id", $this->pId);
 		$this->setUserParam($params, "search_id", $this->searchId);
 		$this->setUserParam($params, "zs_duo_id", $this->zsDuoId);
+		$this->setUserParam($params, "generate_short_link", $this->generateShortLink);
+		$this->setUserParam($params, "generate_weixin_code", $this->generateWeixinCode);
 
 	}
 
@@ -194,5 +205,15 @@ class PddDdkGoodsPromotionUrlGenerateRequest extends PopBaseHttpRequest
 	{
 		$this->zsDuoId = $zsDuoId;
 	}
+
+    public function setGenerateShortLink($generateShortLink)
+    {
+        $this->generateShortLink = $generateShortLink;
+    }
+
+    public function setGenerateWeixinCode($generateWeixinCode)
+    {
+        $this->generateWeixinCode = $generateWeixinCode;
+    }
 
 }
