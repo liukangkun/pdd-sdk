@@ -18,7 +18,7 @@ class PddDdkPromotionGoodsQueryRequest extends PopBaseHttpRequest
     private $goodsId;
 
     /**
-     * @JsonProperty(Long, "$mall_id")
+     * @JsonProperty(Long, "mall_id")
      */
     private $mallId;
 
