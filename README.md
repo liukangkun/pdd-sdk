@@ -23,6 +23,13 @@
 * Config_sample.php 使用的时候文件重命名为Config.php，替换文件里面的配置信息
 * PddXXXX.php 针对某个特定的接口对应的示例代码
 
+## 修改接口
+* 多多进宝推广链接生成 pdd.ddk.goods.promotion.url.generate 添加generate_short_link,generate_weixin_code 配置项
+* 
+
+## 新增接口
+* 多多进宝信息流投放商品报备进度查询 pdd.ddk.promotion.goods.query
+
 ## 使用示例
 ### 用户授权
 ```php
